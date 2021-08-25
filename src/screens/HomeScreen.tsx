@@ -4,7 +4,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 const HomeScreen = () => {
   return (
     <Container>
-      <Row>
+      <Row className="text-center">
         <Col xs="12" lg="3">
           <Image
             src="https://media-exp1.licdn.com/dms/image/C4D03AQGXSWxw7VfdKQ/profile-displayphoto-shrink_800_800/0/1602660548965?e=1635379200&v=beta&t=fr1T5ijD4PW0sxF-QmQjcayvQD_lkLhHjuwwWQ88cQ8"
@@ -15,20 +15,27 @@ const HomeScreen = () => {
           <h3>About</h3>
           <p>
             İrem Buz (Frontend Developer) In this page, my Skills and Contact
-            Informations are listed. I graduated from Physical Therapy and
-            Rehabilitation(as Bachelor's Degree) department of Abant Izzet
-            Baysal University. After a while I decided to be a Frontend
-            Developer. I make great efforts on projects.
+            Informations are listed.
           </p>
+          <p>
+            I graduated from Physical Therapy and Rehabilitation(as Bachelor's
+            Degree) department of Abant Izzet Baysal University.
+          </p>
+          <p>After a while I decided to be a Frontend Developer.</p>
+          <p>I make great efforts on projects.</p>
         </Col>
       </Row>
-      <Row>
+      <hr />
+      <Row className="text-center">
         <h3>Skills</h3>
         <p>
           Firstly I made an internship in a startup to learn software concepts.
+        </p>
+        <p>
           After that I started developing a project(amarouter.com) with my
-          friend. We are still developing the project and I improve my Frontend
-          skills consistently.
+          friend. <br />
+          We are still developing the project and I improve my Frontend skills
+          consistently.
         </p>
         <section className="skills-section">
           <h5>Frontend Developer</h5>
@@ -41,11 +48,15 @@ const HomeScreen = () => {
           </ul>
         </section>
       </Row>
-      <Row>
+      <hr />
+      <Row className="text-center">
         <h3>Contact</h3>
         <ul>
           <li>Email: irembuz7@gmail.com</li>
-          <li>Hackerrank: <a href="https://www.hackerrank.com/irembuz7">irembuz7</a></li>
+          <li>
+            Hackerrank:{" "}
+            <a href="https://www.hackerrank.com/irembuz7">irembuz7</a>
+          </li>
         </ul>
       </Row>
     </Container>
